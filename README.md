@@ -1,7 +1,7 @@
 Mocked
 ======
 
-Fill existing structs with random data.
+Populate structs with random data.
 
 Example:
 
