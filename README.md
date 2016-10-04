@@ -24,7 +24,7 @@ Example:
 
 Define your struct as usual:
 
-```golang
+```go
 // Vessel details. Only exported fields are mocked.
 type Vessel struct {
     ID    string `mocked:"uuid"`
@@ -36,14 +36,14 @@ type Vessel struct {
 
 Then populate struct with random data:
 
-```golang
+```go
 v := Vessel{}
 mocked.Random(&v)
 ```
 
 And serialize, if you want:
 
-```golang
+```go
 b, err := json.Marshal(v)
 if err != nil {
     log.Fatal(err)
