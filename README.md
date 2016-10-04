@@ -40,3 +40,14 @@ Then populate struct with random data:
     v := Vessel{}
     mocked.Random(&v)
 ```
+
+And serialize, if you want:
+
+```
+    b, err := json.Marshal(v)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    fmt.Println(string(b))
+```
